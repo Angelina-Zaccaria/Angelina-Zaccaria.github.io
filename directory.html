@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Directory | SSW</title>
+	<link rel="icon" href="https://i.groupme.com/750x751.jpeg.3ffc9fba30b74232bb8f6c7750be3542">
+
+	<script src="login.js"></script>
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<!-- Google Fonts; Nunito -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+	<nav id="navbarMain" class="navbar navbar-light navbar-expand-md py-0 fixed-top">
+		<div class="container m-0 mr-auto" id="nav-container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="home.html"><img class="navbar-image" src="https://i.groupme.com/750x751.jpeg.3ffc9fba30b74232bb8f6c7750be3542"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links"
+		            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+		            <span class="navbar-toggler-icon"></span>
+		        </button>
+	    </div>
+	    <div class="collapse navbar-collapse ml-auto" id="nav-links">
+    	  <ul class="navbar-nav">
+				<li class="navbar-nav">
+					<a href="about.html" class="nav-link" id="nav-link-about">About</a>
+				</li>
+                <li class="navbar-nav">
+                    <a href="calendar.html" class="nav-link" id="nav-link-calendar">Calendar</a>
+                </li>
+				<li class="navbar-nav">
+					<a href="club.html" class="nav-link" id="nav-link-club">Club</a>
+				 </li>
+                <li class="navbar-nav">
+                    <a href="directory.html" class="nav-link" id="nav-link-directory">Directory</a>
+                    </li>
+                <li class="navbar-nav">
+                    <a href="https://www.wikipedia.org/" class="nav-link" id="nav-link-wiki" target="blank">Wiki</a>
+                </li>
+                <li class="navbar-nav">
+					<a href="courseplanning.html" class="nav-link" id="nav-link-courseplanning">Course&nbspPlanning</a>
+				</li>
+			</ul>
+	    </div>
+		
+		<div class="container m-0 mr-auto">
+			<div class="collapse navbar-collapse mr-auto">
+				<ul class="navbar-nav ml-auto" id="navbar-account">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="buttom" data-toggle="dropdown"><img src="http://cdn.onlinewebfonts.com/svg/img_215059.png" class="navbar-account-image" id="client-photo"></a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#" id="client-name">Guest</a>
+							<a class="dropdown-item" href="#" onclick="login()">Login</a>
+							<a class="dropdown-item" href="#" onclick="logout()">Logout</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+    </nav>
+    
+    <div class="jumbotron iframe-container">
+        <p style="text-align:center"><iframe id="directory" display="block" width="70%" height="750" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSSBqxrte21SnglAw5mQzFAEimowKc5L9Ox_56xHs6AChY8G-LYzKdH3HcpaL5PL05irJHC4cgC3pDH/pubhtml?widget=true&amp;headers=false"></iframe></p>
+    </div>
+        
+    <footer>
+		<br>
+		  <!-- Media -->
+		  <ul class="list-unstyled list-inline text-center">
+			<li class="list-inline-item">
+				<a href="https://github.com/" class="social-media-button" target="blank"><img class="social-media-image" src="https://image.flaticon.com/icons/png/512/25/25231.png"></img></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="mailto:stevens.ssw@gmail.com" class="social-media-button"><img class="social-media-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/New_Logo_Gmail.svg/512px-New_Logo_Gmail.svg.png"></img></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="https://www.linkedin.com/in/liam-brew-66946214b/" class="social-media-button" target="blank"><img class="social-media-image" src="http://www.jacobusconsulting.com/wp-content/uploads/2017/03/linkedin-logo-copy.png"></img></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="https://www.instagram.com/secstevens/" class="social-media-button" target="blank"><img class="social-media-image" src="https://steemitimages.com/p/EfcLDC2cS9gY4P1LUXSHUWr7HHukQMpNwpNLvysfV4KD3oUxoZM6yoR23r3Zsph7LkiLBP1zNx126bZnsR6vGFqdTF5j4?format=match&mode=fit"></a>
+			</li>
+		  </ul>
+		  <!-- Media -->
+		
+		  <!-- Author -->
+		  <div class="footer-copyright text-center py-3">Created by <a href="mailto:lbrew@stevens.edu">Liam Brew</a></div>
+		  <!-- Author -->
+		
+    </footer>
+
+	<!-- Bootstrap JS & JQUERY CDNs -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB4qPNgewB3Rl3WGZlo1VwiCqI6dKaO2mY",
+            authDomain: "stevens-ssw.firebaseapp.com",
+            databaseURL: "https://stevens-ssw.firebaseio.com",
+            projectId: "stevens-ssw",
+            storageBucket: "stevens-ssw.appspot.com",
+            messagingSenderId: "340247076403"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script>
+        //Require Login
+        function login(){
+            function newLoginHappened(user){
+                if (user){
+                    //user is signed in
+                    app(user);
+                }else{
+                    var provider = new firebase.auth.GoogleAuthProvider();
+                    firebase.auth().signInWithRedirect(provider);
+                    app(user);
+                }
+            }
+            firebase.auth().onAuthStateChanged(newLoginHappened);   
+        }
+        window.onload = login();
+    </script>
+</body>
+</html>

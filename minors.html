@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course Planning | SSW</title>
+	<link rel="icon" href="https://i.groupme.com/750x751.jpeg.3ffc9fba30b74232bb8f6c7750be3542">
+
+	<script src="login.js"></script>
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<!-- Google Fonts; Nunito -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+	<nav id="navbarMain" class="navbar navbar-light navbar-expand-md py-0 fixed-top">
+		<div class="container m-0 mr-auto" id="nav-container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="home.html"><img class="navbar-image" src="https://i.groupme.com/750x751.jpeg.3ffc9fba30b74232bb8f6c7750be3542"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links"
+		            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+		            <span class="navbar-toggler-icon"></span>
+		        </button>
+	    </div>
+	    <div class="collapse navbar-collapse ml-auto" id="nav-links">
+    		<ul class="navbar-nav">
+				<li class="navbar-nav">
+					<a href="about.html" class="nav-link" id="nav-link-about">About</a>
+				</li>
+		  		<li class="navbar-nav">
+		     		<a href="calendar.html" class="nav-link" id="nav-link-calendar">Calendar</a>
+				</li>
+				<li class="navbar-nav">
+					<a href="club.html" class="nav-link" id="nav-link-club">Club</a>
+				</li>
+		  		<li class="navbar-nav">
+		  			<a href="directory.html" class="nav-link" id="nav-link-directory">Directory</a>
+		    	</li>
+		  		<li class="navbar-nav">
+		    		<a href="https://www.wikipedia.org/" class="nav-link" id="nav-link-wiki" target="blank">Wiki</a>
+				</li>
+				<li class="navbar-nav">
+					<a href="courseplanning.html" class="nav-link" id="nav-link-courseplanning">Course&nbspPlanning</a>
+				</li>
+
+			</ul>
+	    </div>
+		</div>
+		
+		<div class="container m-0 mr-auto">
+			<div class="collapse navbar-collapse mr-auto">
+				<ul class="navbar-nav ml-auto" id="navbar-account">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="buttom" data-toggle="dropdown"><img src="http://cdn.onlinewebfonts.com/svg/img_215059.png" class="navbar-account-image" id="client-photo"></a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#" id="client-name">Guest</a>
+							<a class="dropdown-item" href="#" onclick="login()">Login</a>
+							<a class="dropdown-item" href="#" onclick="logout()">Logout</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="jumbotron d">
+		<h1 class="section-header">Course Planning</h1>
+		<p class="p-section default">
+
+
+			<table style="width:100%">
+			<tr>
+				<td style="width:18%" valign="top">
+					<nav>
+				         <p><a href="courseplanning.html" class="menu-link">Course Information</a></li></p>
+				         <p><a href='standardschedule.html' class="menu-link">Standard Schedule</a></li></p>
+				         <p><a href='coopscheduleoptions.html' class="menu-link">Co-op Schedule Options</a></li></p>
+				         <p><a href='domainelectives.html' class="menu-link">Domain Electives</a></li></p>
+						 <p><strong><a href='minors.html' class="menu-link">Minors</a></strong></li></p>
+						 <p><a href='interactiveoptions.html' class="menu-link">What classes can I take next semester?</a></li></p>
+				    </nav>
+				</td>
+				<td valign="top">
+					<p>All minors offered at Stevens are listed below with links to information about required courses for each minor. Common minors are bolded. All minors require taking 2 courses beyond what is required on your study plan.</p>
+					<table style="width:100%">
+					<tr>
+						<td valign="top">
+							<h5><u><a href="https://www.stevens.edu/school-business/undergraduate-programs/undergraduate-business-minors" target="_blank"><strong>School of Business</strong></a></u></h5>
+							<ul>
+								<li>Accounting</li>
+								<li>Economics</li>
+								<li><strong>Entrepreneurship</strong></li>
+								<li>Finance</li>
+								<li>Information Systems</li>
+								<li>International Business</li>
+								<li>Marketing</li>
+								<li><strong>Quantitative Finance</strong><br></li>
+							</ul>
+							<h5><u><a href="https://www.stevens.edu/college-arts-and-letters/undergraduate-programs/undergraduate-minors" target="_blank"><strong>College of Arts and Letters</strong></a></u></h5>
+							<ul>
+								<li>Gender & Cultural Studies</li>
+								<li>Pre-Law & Public Policy</li>
+								<li>History</li>
+								<li>Literature</li>
+								<li>Philosophy</li>
+								<li>Social Sciences</li>
+								<li>Science Communication</li>
+								<li><strong>Science, Technology and Society</strong></li>
+								<li><strong>Music & Technology</strong></li>
+								<li>Visual Arts & Technology</li>
+								<li>Theater & Technology</li>
+								<li>Film Studies</li>
+								<li>Medical Humanities</li>
+							</ul>
+						</td>
+						<td valign="top">
+							<h5><u><strong>School of Systems & Enterprises</strong></u></h5>
+							<ul>
+								<li><a href="https://www.stevens.edu/school-systems-enterprises/undergraduate-programs/systems-engineering-minor" target="_blank">Systems Engineering</a></li>
+								<li><a href="https://www.stevens.edu/school-systems-enterprises/undergraduate-programs/engineering-management-minor" target="_blank"><strong>Engineering Management</strong></a></li>
+								<li>Software Engineering - see below<br></li>
+							</ul>
+							<h5><u><a href="https://www.stevens.edu/schaefer-school-engineering-science/undergraduate-programs/undergraduate-minors" target="_blank"><strong>Schaefer School of Engineering & Science</strong></a></u></h5>
+							<ul>
+								<li>Astronomy</li>
+								<li>Biochemical Engineering</li>
+								<li>Biology</li>
+								<li><strong>Biomedical Engineering</strong></li>
+								<li>Chemical Biology</li>
+								<li>Chemical Engineering</li>
+								<li>Chemistry</li>
+								<li>Coastal Engineering</li>
+								<li><strong>Computer Science</strong></li>
+								<li>Cybersecurity</li>
+								<li>Environmental Engineering</li>
+								<li>Green Engineering</li>
+								<li>Mathematics</li>
+								<li>Media Engineering</li>
+								<li>Mechatronics</li>
+								<li>Photonics</li>
+								<li>Physics</li>
+								<li>Structural Engineering</li>
+								<li>Water Resources<br></li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+
+				<h4><br><br><strong>Software Engineering minor</strong> (for non-Software Engineering majors only)</h4>
+
+				<p>Students must possess a cumulative GPA of at least 2.7 at graduation. A Software Engineering minor requires a two-course overload. The following are required courses: </p>
+
+				<ul>
+					<li>MA 134 Discrete Math or CS 135 Discrete Structures</li>
+					<li>SSW 215 Individual Software Engineering</li>
+					<li>SSW 315 Object Based Software Engineering</li>
+					<li>SSW 345 Model Based Software Engineering</li>
+					<li>SSW 555 Agile Methods</li>
+					<li>SSW 581 System Engineering Architecture</li>
+				</ul>
+
+				<p>The following prerequisite is needed to undertake the minor program:<br>
+				<ul><li>E115 Introduction to Programming or CS115 Introduction to Computer Science</li></ul></p>
+
+				</td>
+			</tr>
+			</table>
+		</p>
+
+	</div>
+
+	<!-- Bootstrap JS & JQUERY CDNs -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	
+	<!-- Firebase App is always required and must be first -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+ 
+	<!-- Add additional services that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+ 
+ 	<script>
+      // Initialize Firebase
+      var config = {
+          apiKey: "AIzaSyB4qPNgewB3Rl3WGZlo1VwiCqI6dKaO2mY",
+          authDomain: "stevens-ssw.firebaseapp.com",
+          databaseURL: "https://stevens-ssw.firebaseio.com",
+          projectId: "stevens-ssw",
+          storageBucket: "stevens-ssw.appspot.com",
+          messagingSenderId: "340247076403"
+      };
+      firebase.initializeApp(config);
+	</script>
+</body>
+</html>

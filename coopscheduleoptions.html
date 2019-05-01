@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course Planning | SSW</title>
+	<link rel="icon" href="https://i.groupme.com/750x751.jpeg.3ffc9fba30b74232bb8f6c7750be3542">
+
+	<script src="login.js"></script>
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<!-- Google Fonts; Nunito -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+	<nav id="navbarMain" class="navbar navbar-light navbar-expand-md py-0 fixed-top">
+		<div class="container m-0 mr-auto" id="nav-container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="home.html"><img class="navbar-image" src="https://i.groupme.com/750x751.jpeg.3ffc9fba30b74232bb8f6c7750be3542"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links"
+		            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+		            <span class="navbar-toggler-icon"></span>
+		        </button>
+	    </div>
+	    <div class="collapse navbar-collapse ml-auto" id="nav-links">
+    		<ul class="navbar-nav">
+				<li class="navbar-nav">
+					<a href="about.html" class="nav-link" id="nav-link-about">About</a>
+				</li>
+		  		<li class="navbar-nav">
+		     		<a href="calendar.html" class="nav-link" id="nav-link-calendar">Calendar</a>
+				</li>
+				<li class="navbar-nav">
+					<a href="club.html" class="nav-link" id="nav-link-club">Club</a>
+				</li>
+		  		<li class="navbar-nav">
+		  			<a href="directory.html" class="nav-link" id="nav-link-directory">Directory</a>
+		    	</li>
+		  		<li class="navbar-nav">
+		    		<a href="https://www.wikipedia.org/" class="nav-link" id="nav-link-wiki" target="blank">Wiki</a>
+				</li>
+				<li class="navbar-nav">
+					<a href="courseplanning.html" class="nav-link" id="nav-link-courseplanning">Course&nbspPlanning</a>
+				</li>
+
+			</ul>
+	    </div>
+		</div>
+		
+		<div class="container m-0 mr-auto">
+			<div class="collapse navbar-collapse mr-auto">
+				<ul class="navbar-nav ml-auto" id="navbar-account">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="buttom" data-toggle="dropdown"><img src="http://cdn.onlinewebfonts.com/svg/img_215059.png" class="navbar-account-image" id="client-photo"></a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#" id="client-name">Guest</a>
+							<a class="dropdown-item" href="#" onclick="login()">Login</a>
+							<a class="dropdown-item" href="#" onclick="logout()">Logout</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="jumbotron d">
+		<h1 class="section-header">Course Planning</h1>
+		<p class="p-section default">
+
+
+			<table style="width:100%">
+			<tr>
+				<td style="width:18%" valign="top">
+					<nav>
+				         <p><a href="courseplanning.html" class="menu-link">Course Information</a></li></p>
+				         <p><a href='standardschedule.html' class="menu-link">Standard Schedule</a></li></p>
+				         <p><strong><a href='coopscheduleoptions.html' class="menu-link">Co-op Schedule Options</a></strong></li></p>
+				         <p><a href='domainelectives.html' class="menu-link">Domain Electives</a></li></p>
+						 <p><a href='minors.html' class="menu-link">Minors</a></li></p>
+						 <p><a href='interactiveoptions.html' class="menu-link">What classes can I take next semester?</a></li></p>
+				    </nav>
+				</td>
+				<td>
+					<table style="width:100%">
+					<tr>
+						<td valign="top" colspan="3" style="width:99%">
+							<h4>What is Cooperative Education?</h4>
+							<p>Cooperative education, or "Co-op" is a five year educational program where students alternate between semesters of full-time work and full-time study in areas related to the student's academic major and career goals over the course of their sophomore and junior years.</p>
+							<h4>Benefits of Being a Co-op Student</h4>
+							<ul>
+								<li>Co-op gives you a chance to apply knowledge and theories gained in the classroom to a 'real-world' environment</li>
+								<li>Co-op work terms allow you to make informed educational and career choices based on full-time, work experiences related to your academic studies and career interests</li>
+								<li>The Co-op program provides resume writing, interview preparation, job search strategies, and ongoing support while students are out on work terms</li>
+								<li>Begin to establish a valuable employer contact network</li>
+								<li>Each co-op assignment is full-time and paid</li>
+							</ul>
+							<h4>How do I Join the Co-op Program?</h4>
+							<p>All students majoring in Engineering and Science are invited to attend informational meetings during the first semester of their freshman year. First year students officially join Co-op at the beginning of their second semester.</p>
+							<h4>Co-op Eligibility and Requirements</h4>
+							<p>In order to be eligible for a first work assignment, students must complete all first year course requirements and be in good academic standing.</p>
+							<ul>
+								<li>Students must complete one summer of study</li>
+								<li>Students must maintain a minimum GPA of 2.2</li>
+								<li>To maximize your co-op experience, we require one "return" work term at an organization</li>
+								<li>Vacations and time off are not permitted during a co-op assignment</li>
+							</ul>
+							<h4>Co-op Work Cycles</h4>
+							<p><strong>Fall:</strong> September — December<br>
+							<strong>Spring:</strong> January — May<br>
+							<strong>Summer:</strong> May — August</p>
+							<h4>Additional Information</h4>
+							<p>It is recommended that Software Engineering majors use <strong>Co-op Schedule B</strong>. An example course plan for what to take when to avoid prereq issues and courses only being offered certain semesters is below (not an official recommendation or guaranteed). Since many Software Engineers have already started <strong>Schedule A</strong>, an example course plan is listed below the plan for Schedule B. Courses that have been moved from their <a href="standardschedule.html" target="_blank">standard term</a> are in <element style="color:red";>red</element>. Science electives, general electives, <a href="domainelectives.html" target="_blank">domain electives</a>, and humanities can always be moved around if you run into scheduling issues, and if you want to be signed into a Software Engineering class that you don't have the prereq for, see Professor Vesonder because he might be able to get you signed into it.</p>
+							<p>If you have any questions regarding the Co-op progrm, please visit the Stevens Career Center on the 6th floor of the Howe Center, call <a href="tel:201-216-5166">201-216-5166</a>, or email <a href="mailto:careercenter@stevens.edu">careercenter@stevens.edu</a>.</p>
+
+							
+						</td>
+					</tr>
+					<tr></tr>
+					<tr>
+						<td>
+							<img src="images/ScheduleB.png" alt="Schedule B"><br><br>
+							<h3>Year 1</h3>
+						</td>
+					</tr>
+					<tr>
+						<td class="add-padding" valign="top" style="width:33%">
+							<strong>Fall - Term 1</strong><br>
+							CH 115 - General Chemistry I<br>
+							CH 117 - General Chemistry Lab I<br>
+							MA 121 - Calculus IA: Differential Calculus<br>
+							MA 122 - Calculus IB: Integral Calculus<br>
+							E 101 - Engineering Experience I<br>
+							E 120 - Engineering Graphics<br>
+							E 121 - Engineering Design I<br>
+							E 115 - Introduction to Programming<br>
+							CAL 103 - Writing & Communications Colloquium<br>
+						</td>
+						<td class="add-padding" valign="top" style="width:33%">
+							<strong>Spring - Term 2</strong><br>
+							MA 123 - Series, Vectors, Functions, and Surfaces<br>
+							MA 124 - Calculus of Two Variables<br>
+							PEP 111 - Mechanics<br>
+							MGT 103 - Intro to Entrepreneurial Thinking<br>
+							E 122 - Engineering Design II<br>
+							CAL 105 - Knowledge, Nature, Culture<br>
+							<i>Science Elective*</i><br>
+						</td>
+						<td class="add-padding" valign="top" style="width:33%">
+							<strong>Summer</strong><br>
+							Fall/Summer combined coop or off <br>(can study abroad or do research if you want)<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3><br>Year 2</h3>
+						</td>
+					</tr>
+					<tr>
+						<td class="add-padding" valign="top">
+							<strong>Fall</strong><br>
+							Co-op 1<br>
+						</td>
+						</td><td class="add-padding" valign="top">
+							<strong>Spring - Term 3</strong><br>
+							MA 221 - Differential Equations<br>
+							PEP 112 - Electricity & Magnetism<br>
+							E 126 - Mechanics of Solids<br>
+							E 245 - Circuits and Systems<br>
+							E 231 - Engineering Design III<br>
+							<element style="color:red";>SSW 215 - Individual Software Engineering</element><br>
+						</td>
+						<td class="add-padding" valign="top">
+							<strong>Summer</strong><br>
+							Co-op 2<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3><br>Year 3</h3>
+						</td>
+					</tr>
+					<tr>
+						<td class="add-padding" valign="top">
+							<strong>Fall - Term 4</strong><br>
+							<element style="color:red";>SSW 315 - Object-based Software Development</element><br>
+							E 232 - Engineering Design IV<br>
+							<element style="color:red";>E 344 - Materials Processing</element><br>
+							<element style="color:red";><i>Humanities**</i></element><br>
+							<i>Science Elective*</i><br>
+							<i>Humanities**</i><br>
+						</td>
+						<td class="add-padding" valign="top">
+							<strong>Spring</strong><br>
+							Co-op 3<br>
+						</td>
+						<td class="add-padding" valign="top">
+							<strong>Summer - Term 5</strong><br>
+							<element style="color:red";>SSW 555 - Agile Methods for Software Development</element><br>
+							<element style="color:red";>E 234 - Thermodynamics</element><br>
+							E 321 - Engineering Design V<br>
+							E 243 - Probability & Statistics<br>
+							<element style="color:red";>MA 134 - Discrete Math</element><br>
+							<i>Humanities**</i><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3><br>Year 4</h3>
+						</td>
+					</tr>
+					<tr>
+						<td class="add-padding" valign="top">
+							<strong>Fall</strong><br>
+							Co-op 4<br>
+						</td>
+						<td class="add-padding" valign="top">
+							<strong>Spring - Term 6</strong><br>
+							SSW 345 - Model-based Software Engineering<br>
+							E 355 - Engineering Economics<br>
+							SSW 322 - Engineering Design VI<br>
+							SSW 564 - Software Requirements Engineering<br>
+							<i>Domain Elective</i><br>
+							<i>General Elective</i><br>
+							IDE 400 - Senior Innovation I<br>
+						</td>
+						<td class="add-padding" valign="top">
+							<strong>Summer</strong><br>
+							Co-op 5 (optional)<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3><br>Year 5</h3>
+						</td>
+					</tr>
+					<tr>
+						<td class="add-padding" valign="top">
+							<strong>Fall - Term 7</strong><br>
+							<element style="color:red";>ISE 350 - Logistics and Supply Chain Management</element><br>
+							SSW 567 - Software Testing and Quality Assurance<br>
+							<i>Domain Elective</i><br>
+							<i>General Elective</i><br>
+							SSW 423 - Engineering Design VII<br>
+							IDE 401 - Senior Innovation II<br>
+						</td>
+						<td class="add-padding" valign="top">
+							<strong>Spring - Term 8</strong><br>
+							SSW 533 - Software Estimation and Metrics<br>
+							SYS 581 - Systems Engineering Architecture<br>
+							<i>General Elective</i><br>
+							SSW 424 - Engineering Design VIII<br>
+							<i>Humanities**</i><br>
+							IDE 402 - Senior Innovation III<br>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<br>* Science Elective: Any two from CH 116, BIO 281, EN 250, PEP 151, PEP 201, PEP 242; For a complete list of Science Electives, please the Academic Catalog for your entering year. One elective must have a laboratory component; Two electives from the same field cannot be selected.
+							<br><br>** Humanities Requirement: Four additional humanities classes. At least one must be in the 100 or 200 level, at least one must be in the 300 or 400 level, and courses must cover at least two different disciplines within CAL.
+							<br><br>PE Graduation Requirement: Minimum of four semester PE credits in non-repeating courses. No credit or grades are awarded for P.E. classes. Participation in varsity sports may be used to satisfy up to three P.E. requirement.
+							<br><br><i>Disclaimer: Please check the <a href="https://www.stevens.edu/directory/office-registrar/study-planac" target="_blank">study plan for your entering year</a> to confirm that there are no discrepancies between what you are taking and what is listed on your study plan.</i><br><br><hr>
+						</td>
+					</tr> 
+					<tr></tr>
+					<tr>
+						<td>
+							<img src="images/ScheduleA.png" alt="Schedule A"><br><br>
+							<h3>Year 1</h3>
+						</td>
+					</tr>
+					<tr>
+						<td class="add-padding" valign="top" style="width:33%">
+							<strong>Fall - Term 1</strong><br>
+							CH 115 - General Chemistry I<br>
+							CH 117 - General Chemistry Lab I<br>
+							MA 121 - Calculus IA: Differential Calculus<br>
+							MA 122 - Calculus IB: Integral Calculus<br>
+							E 101 - Engineering Experience I<br>
+							E 120 - Engineering Graphics<br>
+							E 121 - Engineering Design I<br>
+							E 115 - Introduction to Programming<br>
+							CAL 103 - Writing & Communications Colloquium<br>
+						</td>
+						<td class="add-padding" valign="top" style="width:33%">
+							<strong>Spring - Term 2</strong><br>
+							MA 123 - Series, Vectors, Functions, and Surfaces<br>
+							MA 124 - Calculus of Two Variables<br>
+							PEP 111 - Mechanics<br>
+							MGT 103 - Intro to Entrepreneurial Thinking<br>
+							E 122 - Engineering Design II<br>
+							CAL 105 - Knowledge, Nature, Culture<br>
+							<i>Science Elective*</i><br>
+						</td>
+						<td class="add-padding" valign="top" style="width:33%">
+							<strong>Summer</strong><br>
+							Off (can study abroad or do research if you want)<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3><br>Year 2</h3>
+						</td>
+					</tr>
+					<tr>
+						</td><td class="add-padding" valign="top">
+							<strong>Fall - Term 3</strong><br>
+							MA 221 - Differential Equations<br>
+							PEP 112 - Electricity & Magnetism<br>
+							E 126 - Mechanics of Solids<br>
+							E 245 - Circuits and Systems<br>
+							E 231 - Engineering Design III<br>
+							<i>Humanities**</i><br>
+						</td>
+						<td class="add-padding" valign="top">
+							<strong>Spring</strong><br>
+							Co-op 1<br>
+						</td>
+						
+						<td class="add-padding" valign="top">
+							<strong>Summer - Term 4</strong><br>
+							MA 134 - Discrete Math<br>
+							<element style="color:red";>E 243 - Probability & Statistics</element><br>
+							E 234 - Thermodynamics<br>
+							<element style="color:red";>SSW 555 - Agile Methods for Software Development</element><br>
+							<element style="color:red";><i>Humanities**</i></element><br>
+							<i>Humanities**</i><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3><br>Year 3</h3>
+						</td>
+					</tr>
+					<tr>
+						<td class="add-padding" valign="top">
+							<strong>Fall</strong><br>
+							Co-op 2<br>
+						</td>
+						<td class="add-padding" valign="top">
+							<strong>Spring - Term 5</strong><br>
+							<element style="color:red";><i>General Elective</i></element><br>
+							E 344 - Materials Processing<br>
+							E 321 - Engineering Design V<br>
+							<element style="color:red";>E 232 - Engineering Design IV</element><br>
+							<element style="color:red";>SSW 533 - Software Estimation and Metrics</element><br>
+							<element style="color:red";><i>Science Elective*</i></element><br>
+						</td>
+						<td class="add-padding" valign="top">
+							<strong>Summer</strong><br>
+							Co-op 3<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3><br>Year 4</h3>
+						</td>
+					</tr>
+					<tr>
+						<td class="add-padding" valign="top">
+							<strong>Fall</strong><br>
+							Co-op 3 (cont.)<br>
+						</td>
+						<td class="add-padding" valign="top">
+							<strong>Spring - Term 6</strong><br>
+							SSW 345 - Model-based Software Engineering<br>
+							E 355 - Engineering Economics<br>
+							SSW 322 - Engineering Design VI<br>
+							SSW 564 - Software Requirements Engineering<br>
+							<i>Domain Elective</i><br>
+							<element style="color:red";>SSW 215 - Individual Software Engineering</element><br>
+							IDE 400 - Senior Innovation I<br>
+						</td>
+						<td class="add-padding" valign="top">
+							<strong>Summer</strong><br>
+							Co-op 4 (optional)<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3><br>Year 5</h3>
+						</td>
+					</tr>
+					<tr>
+						<td class="add-padding" valign="top">
+							<strong>Fall - Term 7</strong><br>
+							<element style="color:red";>SSW 315 - Object-based Software Development</element><br>
+							SSW 567 - Software Testing and Quality Assurance<br>
+							<i>Domain Elective</i><br>
+							<element style="color:red";>ISE 350 - Logistics and Supply Chain Management</element><br>
+							SSW 423 - Engineering Design VII<br>
+							IDE 401 - Senior Innovation II<br>
+						</td>
+						<td class="add-padding" valign="top">
+							<strong>Spring - Term 8</strong><br>
+							<element style="color:red";><i>General Elective</i></element><br>
+							SYS 581 - Systems Engineering Architecture<br>
+							<i>General Elective</i><br>
+							SSW 424 - Engineering Design VIII<br>
+							<i>Humanities**</i><br>
+							IDE 402 - Senior Innovation III<br>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<br>* Science Elective: Any two from CH 116, BIO 281, EN 250, PEP 151, PEP 201, PEP 242; For a complete list of Science Electives, please the Academic Catalog for your entering year. One elective must have a laboratory component; Two electives from the same field cannot be selected.
+							<br><br>** Humanities Requirement: Four additional humanities classes. At least one must be in the 100 or 200 level, at least one must be in the 300 or 400 level, and courses must cover at least two different disciplines within CAL.
+							<br><br>PE Graduation Requirement: Minimum of four semester PE credits in non-repeating courses. No credit or grades are awarded for P.E. classes. Participation in varsity sports may be used to satisfy up to three P.E. requirement.
+							<br><br><i>Disclaimer: Please check the <a href="https://www.stevens.edu/directory/office-registrar/study-planac" target="_blank">study plan for your entering year</a> to confirm that there are no discrepancies between what you are taking and what is listed on your study plan.</i>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			</table>
+		</p>
+
+	</div>
+
+	<!-- Bootstrap JS & JQUERY CDNs -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	
+	<!-- Firebase App is always required and must be first -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+ 
+	<!-- Add additional services that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+ 
+ 	<script>
+      // Initialize Firebase
+      var config = {
+          apiKey: "AIzaSyB4qPNgewB3Rl3WGZlo1VwiCqI6dKaO2mY",
+          authDomain: "stevens-ssw.firebaseapp.com",
+          databaseURL: "https://stevens-ssw.firebaseio.com",
+          projectId: "stevens-ssw",
+          storageBucket: "stevens-ssw.appspot.com",
+          messagingSenderId: "340247076403"
+      };
+      firebase.initializeApp(config);
+	</script>
+</body>
+</html>
