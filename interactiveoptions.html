@@ -23,7 +23,7 @@
 	<nav id="navbarMain" class="navbar navbar-light navbar-expand-md py-0 fixed-top">
 		<div class="container m-0 mr-auto" id="nav-container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="home.html"><img class="navbar-image" src="https://i.groupme.com/750x751.jpeg.3ffc9fba30b74232bb8f6c7750be3542"></a>
+				<a class="navbar-brand" href="index.html"><img class="navbar-image" src="https://i.groupme.com/750x751.jpeg.3ffc9fba30b74232bb8f6c7750be3542"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links"
 		            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
 		            <span class="navbar-toggler-icon"></span>
@@ -103,27 +103,27 @@
 							  <tr>
 							  	<td valign="top">
 							  		<u>Design classes:</u><br>
-							  		<input type="checkbox" name="classtaken" value="E121" onchange="prereqTaken(value)"> E 121 - Engineering Design I<br>
-									<input type="checkbox" name="classtaken" value="E122" onchange="prereqTaken(value)"> E 122 - Engineering Design II<br>
-									<input type="checkbox" name="classtaken" value="E231" onchange="prereqTaken(value)"> E 231 - Engineering Design III<br>
-									<input type="checkbox" name="classtaken" value="E232" onchange="prereqTaken(value)"> E 232 - Engineering Design IV<br>
-									<input type="checkbox" name="classtaken" value="SSW322" onchange="prereqTaken(value)"> SSW 322 - Engineering Design VI<br>
-									<input type="checkbox" name="classtaken" value="SSW423" onchange="prereqTaken(value)"> SSW 423 - Engineering Design VII<br><br>
+							  		<input type="checkbox" name="classtaken" value="E 121" onchange="prereqTaken(value)"> E 121 - Engineering Design I<br>
+									<input type="checkbox" name="classtaken" value="E 122" onchange="prereqTaken(value)"> E 122 - Engineering Design II<br>
+									<input type="checkbox" name="classtaken" value="E 231" onchange="prereqTaken(value)"> E 231 - Engineering Design III<br>
+									<input type="checkbox" name="classtaken" value="E 232" onchange="prereqTaken(value)"> E 232 - Engineering Design IV<br>
+									<input type="checkbox" name="classtaken" value="SSW 322" onchange="prereqTaken(value)"> SSW 322 - Engineering Design VI<br>
+									<input type="checkbox" name="classtaken" value="SSW 423" onchange="prereqTaken(value)"> SSW 423 - Engineering Design VII<br><br>
 								</td>
 								<td valign="top">
 									<u>General Engineering classes:</u><br>
-									<input type="checkbox" name="classtaken" value="E245" onchange="prereqTaken(value)"> E 245 - Circuits and Systems<br>
-									<input type="checkbox" name="classtaken" value="CH115" onchange="prereqTaken(value)"> CH 115 - General Chemistry I<br>
-									<input type="checkbox" name="classtaken" value="PEP111" onchange="prereqTaken(value)"> PEP 111 - Mechanics<br>
-									<input type="checkbox" name="classtaken" value="MA122" onchange="prereqTaken(value)"> MA 122 - Calculus IB: Integral Calculus<br>
-									<input type="checkbox" name="classtaken" value="MA124" onchange="prereqTaken(value)"> MA 124 - Calculus of Two Variables<br>
-									<input type="checkbox" name="classtaken" value="MA134" onchange="prereqTaken(value)"> MA 134 - Discrete Mathematics<br>
+									<input type="checkbox" name="classtaken" value="E 245" onchange="prereqTaken(value)"> E 245 - Circuits and Systems<br>
+									<input type="checkbox" name="classtaken" value="CH 115" onchange="prereqTaken(value)"> CH 115 - General Chemistry I<br>
+									<input type="checkbox" name="classtaken" value="PEP 111" onchange="prereqTaken(value)"> PEP 111 - Mechanics<br>
+									<input type="checkbox" name="classtaken" value="MA 122" onchange="prereqTaken(value)"> MA 122 - Calculus IB: Integral Calculus<br>
+									<input type="checkbox" name="classtaken" value="MA 124" onchange="prereqTaken(value)"> MA 124 - Calculus of Two Variables<br>
+									<input type="checkbox" name="classtaken" value="MA 134" onchange="prereqTaken(value)"> MA 134 - Discrete Mathematics<br>
 								</td>
 								<td valign="top">
 									<u>Software Engineering classes:</u><br>
-									<input type="checkbox" name="classtaken" value="SSW215" onchange="prereqTaken(value)"> SSW 215 - Individual Software Engineering<br>
-									<input type="checkbox" name="classtaken" value="SSW315" onchange="prereqTaken(value)"> SSW 315 - Object-Based Software Development<br>
-									<input type="checkbox" name="classtaken" value="SSW345" onchange="prereqTaken(value)"> SSW 345 - Model-Based Software Engineering<br><br>
+									<input type="checkbox" name="classtaken" value="SSW 215" onchange="prereqTaken(value)"> SSW 215 - Individual Software Engineering<br>
+									<input type="checkbox" name="classtaken" value="SSW 315" onchange="prereqTaken(value)"> SSW 315 - Object-Based Software Development<br>
+									<input type="checkbox" name="classtaken" value="SSW 345" onchange="prereqTaken(value)"> SSW 345 - Model-Based Software Engineering<br><br>
 									<button type="button" onclick="processPrereqs()">Go!</button>
 								</td>
 							  </tr>
@@ -131,27 +131,13 @@
 							</form>
 
 							<div>
-								<table id="sswTable" style="width:100%" border="1">
+								<table id="prereqsAvailTable" style="width:100%" border="1">
 								<tr>
 									<th><strong>Course Name</strong></th>
 									<th><strong>Prerequisites</strong></th>
 									<th><strong>Corequisites</strong></th>
 									<th><strong>Term(s) Offered</strong></th>
 									<th><strong>Course Coordinator</strong></th>
-								</tr>
-								<tr>
-									<td>SSW 215 - Individual Software Engineering</td>
-									<td></td>
-									<td></td>
-									<td>S</td>
-									<td>Gregg Vesonder</td>
-								</tr>
-								<tr>
-									<td>SSW 315 - Object-Based Software Engineering</td>
-									<td>SSW215</td>
-									<td></td>
-									<td>F</td>
-									<td>?</td>
 								</tr>
 								</table>
 							</div>
@@ -179,6 +165,19 @@
 	<!-- Add additional services that you want to use -->
   <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+        apiKey: "AIzaSyDTNpbKA9jgDdgdvacNWCkPCwSWGaU-m1E",
+        authDomain: "ssw-215-project.firebaseapp.com",
+        databaseURL: "https://ssw-215-project.firebaseio.com",
+        projectId: "ssw-215-project",
+        storageBucket: "ssw-215-project.appspot.com",
+        messagingSenderId: "705378774344"
+        };
+        firebase.initializeApp(config);
+    </script>
  
  	<script>
       // Initialize Firebase
