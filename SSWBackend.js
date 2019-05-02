@@ -126,75 +126,76 @@ function processPrereqs() {
         docs.forEach(function(doc){
             var data = doc.data();
 
-            if (data.prereqs == "" || prereqsArray.length == 0){
-                if (data.prereqs == ""){
-                    var row = prereqsAvailTable.insertRow(x);
-                    var name_cell = row.insertCell(0);
-                    var prereq_cell = row.insertCell(1);
-                    var coreq_cell = row.insertCell(2);
-                    var term_cell = row.insertCell(3);
-                    var coordinator_cell = row.insertCell(4);
-            
-                    var prereqData = data.prereqs.replace(/Prerequisite: /g,"");
-                    var coreqData = data.coreqs.replace(/Corequisite: /g,"");
-                    var courseTitle = data.shortName + " - " + data.courseName
+            if (prereqsArray.includes(data.shortName) == false){
 
-                    name_cell.innerHTML = courseTitle;
-                    prereq_cell.innerHTML = prereqData;
-                    coreq_cell.innerHTML = coreqData;
-                    term_cell.innerHTML = data.offered;
-                    coordinator_cell.innerHTML = data.instructor;
-                    x = x + 1;
+                if (data.prereqs == "" || prereqsArray.length == 0){
+                    if (data.prereqs == ""){
+                        var row = prereqsAvailTable.insertRow(x);
+                        var name_cell = row.insertCell(0);
+                        var prereq_cell = row.insertCell(1);
+                        var coreq_cell = row.insertCell(2);
+                        var term_cell = row.insertCell(3);
+                        var coordinator_cell = row.insertCell(4);
+                
+                        var prereqData = data.prereqs.replace(/Prerequisite: /g,"");
+                        var coreqData = data.coreqs.replace(/Corequisite: /g,"");
+                        var courseTitle = data.shortName + " - " + data.courseName
+
+                        name_cell.innerHTML = courseTitle;
+                        prereq_cell.innerHTML = prereqData;
+                        coreq_cell.innerHTML = coreqData;
+                        term_cell.innerHTML = data.offered;
+                        coordinator_cell.innerHTML = data.instructor;
+                        x = x + 1;
+                    }
                 }
-            }
 
-            else {
-                //alert("hi");
-                var valid = [];
-                //alert(data.pre.length);
-                for (var i = 0; i < data.pre.length; i++) {
-                    //alert("first for loop");
-                    var indivValid = [];
-                    for (var j = 0; j < prereqsArray.length; j++) {
-                        //alert(data.pre[i]);
-                        //alert("second for loop");
-                        if (data.pre[i].includes(prereqsArray[j]) == true) {
-                            //alert("true");
-                            valid.push("true");
-                            indivValid.push("true");
-                        }
-                        else {
-                            //alert("false");
-                            if ((j == prereqsArray.length - 1) && (indivValid.includes("true") == false)) {
-                                valid.push("false");
+                else {
+                    //alert("hi");
+                    var valid = [];
+                    //alert(data.pre.length);
+                    for (var i = 0; i < data.pre.length; i++) {
+                        //alert("first for loop");
+                        var indivValid = [];
+                        for (var j = 0; j < prereqsArray.length; j++) {
+                            //alert(data.pre[i]);
+                            //alert("second for loop");
+                            if (data.pre[i].includes(prereqsArray[j]) == true) {
+                                //alert("true");
+                                valid.push("true");
+                                indivValid.push("true");
+                            }
+                            else {
+                                //alert("false");
+                                if ((j == prereqsArray.length - 1) && (indivValid.includes("true") == false)) {
+                                    valid.push("false");
+                                }
                             }
                         }
                     }
-                }
-               // alert(valid);
+                   // alert(valid);
+                    
+                    if (valid.includes("false") == false) {
+                        //alert(valid);
+                        var row = prereqsAvailTable.insertRow(x);
+                        var name_cell = row.insertCell(0);
+                        var prereq_cell = row.insertCell(1);
+                        var coreq_cell = row.insertCell(2);
+                        var term_cell = row.insertCell(3);
+                        var coordinator_cell = row.insertCell(4);
                 
-                if (valid.includes("false") == false) {
-                    //alert(valid);
-                    var row = prereqsAvailTable.insertRow(x);
-                    var name_cell = row.insertCell(0);
-                    var prereq_cell = row.insertCell(1);
-                    var coreq_cell = row.insertCell(2);
-                    var term_cell = row.insertCell(3);
-                    var coordinator_cell = row.insertCell(4);
-            
-                    var prereqData = data.prereqs.replace(/Prerequisite: /g,"");
-                    var coreqData = data.coreqs.replace(/Corequisite: /g,"");
-                    var courseTitle = data.shortName + " - " + data.courseName
+                        var prereqData = data.prereqs.replace(/Prerequisite: /g,"");
+                        var coreqData = data.coreqs.replace(/Corequisite: /g,"");
+                        var courseTitle = data.shortName + " - " + data.courseName
 
-                    name_cell.innerHTML = courseTitle;
-                    prereq_cell.innerHTML = prereqData;
-                    coreq_cell.innerHTML = coreqData;
-                    term_cell.innerHTML = data.offered;
-                    coordinator_cell.innerHTML = data.instructor;
-                    x = x + 1;
+                        name_cell.innerHTML = courseTitle;
+                        prereq_cell.innerHTML = prereqData;
+                        coreq_cell.innerHTML = coreqData;
+                        term_cell.innerHTML = data.offered;
+                        coordinator_cell.innerHTML = data.instructor;
+                        x = x + 1;
+                    }
                 }
-                
-
             }
         })
     });
